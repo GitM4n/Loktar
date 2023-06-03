@@ -1,0 +1,1004 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/localFonts.css">
+    <link rel="stylesheet" href="css/null.css">
+    <link rel="stylesheet" href="css/slider.css">
+    <link rel="stylesheet" href="css/lck.css">
+    <link rel="stylesheet" href="css/media.css">
+    <title>Locktar</title>
+</head>
+<body>
+    <canvas width="320" height="640" id="game"></canvas>
+    <canvas style="border: 0px" width="320" height="100" id="score"></canvas>
+   
+    <div class="wrapper">
+        <header class="header">
+            <div class="header__mob-menu mob-menu">
+                <div class="mob-menu__title">
+                    <h2 class="fontOver-s">меню</h2>
+                </div>
+                <div class="mob-menu__inner">
+                    <div class="mob-menu__content">
+                        <div class="mob-menu__col">
+                            <div class="mob-menu__start">
+                                <p class="mob-menu__start-text text">Нажмите кнопку <b>СТАРТ,</b><br>чтобы начать</p>
+                                <div class="mob-menu__start-btn startButton">
+                                    <svg width="267" height="58" viewBox="0 0 267 58" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M3 19L17 2H244H251L264 19L228 56H39L3 19Z" fill="url(#paint0_linear_1_53)" fill-opacity="0.8"/>
+                                        <path d="M2.22807 18.3643L1.65881 19.0555L2.28327 19.6974L38.2833 56.6974L38.5777 57H39H228H228.422L228.717 56.6974L264.717 19.6974L265.319 19.0785L264.794 18.3925L251.794 1.39255L251.494 1H251H244H17H16.5281L16.2281 1.36429L2.22807 18.3643Z" stroke="#11E5B3" stroke-width="2"/>
+                                        <defs>
+                                        <linearGradient id="paint0_linear_1_53" x1="156.954" y1="53.3332" x2="159.166" y2="-4.17711" gradientUnits="userSpaceOnUse">
+                                        <stop stop-color="#008969"/>
+                                        <stop offset="1" stop-color="#0C1E30" stop-opacity="0"/>
+                                        </linearGradient>
+                                        </defs>
+                                        </svg>
+                                        <button>старт</button>                      
+                                </div>
+                            </div>
+                            <nav class="mob-menu__nav">
+                                <ul class="mob-menu__list">
+                                    <li class="mob-menu__list-li"><a href="#how">функции</a></li>
+                                    <li class="mob-menu__list-li"><a href="#tarifs">тарифы</a></li>
+                                    <li class="mob-menu__list-li"><a href="#">справка</a></li>
+                                    <li class="mob-menu__list-li"><a href="#faq">Faq</a></li>
+                                </ul>
+                            </nav>
+                            <div class="mob-menu__quest">
+                                <div class="anyQuest">
+                                    <div class="anyQuest__content">
+                                        <p class="anyQuest__subheader fontOver-b">Остались вопросы?</p>
+                                        <p class="anyQuest__text text">ВКонтакте / info@loktar.ru</p>
+                                    </div>
+                                    <p class="anyQuest__foot fontOver-b">цифровой помощник L</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="header__inner">
+                    <div class="header__top">
+                        <div class="header__col-l">
+                            <nav class="header__menu-l fontOver-s">
+                                <p class="header__menu-title">Меню</p>
+                                <ul class="menu-list">
+                                    <li class="menu-list__li"><a href="#how">Функции</a> </li>
+                                    <li class="menu-list__li"><a href="#tarifs">Тарифы</a></li>
+                                    <li class="menu-list__li"><a href="#">Справка</a></li>
+                                    <li class="menu-list__li"><a href="#faq">FAQ</a></li>
+                                </ul>
+                            </nav>
+                        </div>
+                        <div class="header__col-r">
+                            <nav class="header__menu-r fontOver-s">
+                                <p class="header__menu-title">Вход</p>
+                                <ul class="menu-list">
+                                    <li class="menu-list__li"><a href="">Начать</a> </li>
+                                    <li class="menu-list__li"><a href="">Начать<br> через Elama</a></li>
+                                </ul>
+                            </nav>
+                        </div>
+                    </div>
+                    <div class="welcome">
+                        <div class="welcome__body">
+                            <img src="img/dec_frame.png" alt="">
+                            <div class="welcome__body-text">
+                                <h2 class="fontOver-b">Добро пожаловать <br>в систему Loktar</h2>
+                                <p class="text">Сервис, меняющий день <br>таргетолога </p>
+                            </div>   
+                        </div>
+                        <div class="welcome__footer">
+                            <p class="fontOver-b">цифровой помощник L</p>
+                            <img src="img/dots.png" alt="">
+                        </div>
+                    </div>
+                    <div class="header__bottom">
+                        <div class="header__main-text">
+                            <p class="cyberText">Жизнь</p>
+                            <p class="cyberText-2">таргетолога не будет прежней</p>
+                        </div>
+                        <div class="header__start">
+                            <p class="header__start-text text">Нажмите кнопку <b>СТАРТ,</b><br>чтобы начать</p>
+                            <div class="header__start-btn startButton">
+                                <svg width="267" height="58" viewBox="0 0 267 58" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M3 19L17 2H244H251L264 19L228 56H39L3 19Z" fill="url(#paint0_linear_1_53)" fill-opacity="0.8"/>
+                                    <path d="M2.22807 18.3643L1.65881 19.0555L2.28327 19.6974L38.2833 56.6974L38.5777 57H39H228H228.422L228.717 56.6974L264.717 19.6974L265.319 19.0785L264.794 18.3925L251.794 1.39255L251.494 1H251H244H17H16.5281L16.2281 1.36429L2.22807 18.3643Z" stroke="#11E5B3" stroke-width="2"/>
+                                    <defs>
+                                    <linearGradient id="paint0_linear_1_53" x1="156.954" y1="53.3332" x2="159.166" y2="-4.17711" gradientUnits="userSpaceOnUse">
+                                    <stop stop-color="#008969"/>
+                                    <stop offset="1" stop-color="#0C1E30" stop-opacity="0"/>
+                                    </linearGradient>
+                                    </defs>
+                                    </svg>
+                                    <button>старт</button>                      
+                            </div>
+                        </div>
+                    </div>
+                                        
+                </div>
+            </div>
+        </header>
+        <main class="main">
+            <div class="humans">
+                <div class="container">
+                    <div class="humans__inner slider">
+                        <ul class="humans-list slider__container">
+                            <li class="humans-list__li human-card slide">
+                                <div class="human-card__hover">
+                                        <img src="img/Frame_active.svg" alt="">
+                                </div>
+                                <div class="human-card__header human-header">
+                                    <div class="human-header__dna">
+                                        <img class="human-header__dna-img" src="img/DNA.png" alt="">
+                                        <p class="human-header__dna-text fontOver-s">герой N1/ANTHONYTOOMY</p>
+                                    </div>
+                                    <p class="human-header__id fontOver-s">идентификационный <br>номер: N76 42 900</p>
+                                </div>
+                                <div class="human-card__avatar">
+                                    <img src="img/peoples/1.png" alt="">
+                                </div>
+                                <div class="human-card__content human-content">
+                                    <div class="human-content__top">
+                                        <p class="human-content__title title">АНТОН ТУМ</p>
+                                    </div>
+                                    <div class="human-content__body human-body">
+                                        <div class="human-body__clan-block">
+                                            <img class="human-body__clan-img" src="img/icons/image 86 (Traced).png" alt="">
+                                            <div class="human-body__col">
+                                                <p class="human-body__title">Клан</p>
+                                                <p class="human-body__text">Рекламное агентство <br> Red Bananas</p>
+                                            </div>
+                                        </div>
+                                        <div class="human-body__class-block">
+                                            <img class="human-body__clan-img" src="img/icons/image 88 (Traced).png" alt="">
+                                            <div class="human-body__col">
+                                                <p class="human-body__title">Класс</p>
+                                                <p class="human-body__text">Основатель</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="human-content__footer human-footer text">
+                                       <blockquote class="human-footer__text">... все 30 таргетологов нашей команды используют Локтар</blockquote>                                       
+                                        <img src="img/peoples/footer.png" alt="">
+                                    </div>
+                                </div>
+                            </li>
+                             <li class="humans-list__li human-card slide">
+                                <div class="human-card__hover">
+                                        <img src="img/Frame_active.svg" alt="">
+                                </div>
+                                <div class="human-card__header human-header">
+                                    <div class="human-header__dna">
+                                        <img class="human-header__dna-img" src="img/DNA.png" alt="">
+                                        <p class="human-header__dna-text fontOver-s">герой N2/ANDYKRAVETS</p>
+                                    </div>
+                                    <p class="human-header__id fontOver-s">идентификационный <br> номер: N72 56 990</p>
+                                </div>
+                                <div class="human-card__avatar">
+                                    <img src="img/peoples/2.png" alt="">
+                                </div>
+                                <div class="human-card__content human-content">
+                                    <div class="human-content__top">
+                                        <p class="human-content__title title">Андрей анцибор</p>
+                                    </div>
+                                    <div class="human-content__body human-body">
+                                        <div class="human-body__clan-block">
+                                            <img class="human-body__clan-img" src="img/icons/image 86 (Traced).png" alt="">
+                                            <div class="human-body__col">
+                                                <p class="human-body__title">Клан</p>
+                                                <p class="human-body__text">Рекламное агентство «Нефтетрафик»</p>
+                                            </div>
+                                        </div>
+                                        <div class="human-body__class-block">
+                                            <img class="human-body__clan-img" src="img/icons/image 88 (Traced).png" alt="">
+                                            <div class="human-body__col">
+                                                <p class="human-body__title">Класс</p>
+                                                <p class="human-body__text">Основатель</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="human-content__footer human-footer text">
+                                       <blockquote class="human-footer__text">Loktar входит в обязательную часть обучения всех таргетологов, которые начинают работу в нашей команде</blockquote>                                       
+                                       <img src="img/peoples/footer.png" alt="">
+                                    </div>
+                                </div>
+                            </li>
+                              <li class="humans-list__li human-card slide">
+                                <div class="human-card__hover">
+                                        <img src="img/Frame_active.svg" alt="">
+                                </div>
+                                <div class="human-card__header human-header">
+                                    <div class="human-header__dna">
+                                        <img class="human-header__dna-img" src="img/DNA.png" alt="">
+                                        <p class="human-header__dna-text fontOver-s">герой N3/ALASTAR</p>
+                                    </div>
+                                    <p class="human-header__id fontOver-s">идентификационный <br> номер: N79 46 680</p>
+                                </div>
+                                <div class="human-card__avatar">
+                                    <img src="img/peoples/3.png" alt="">
+                                </div>
+                                <div class="human-card__content human-content">
+                                    <div class="human-content__top">
+                                        <p class="human-content__title title">Александр Антощенко</p>
+                                    </div>
+                                    <div class="human-content__body human-body">
+                                        <div class="human-body__clan-block">
+                                            <img class="human-body__clan-img" src="img/icons/image 86 (Traced).png" alt="">
+                                            <div class="human-body__col">
+                                                <p class="human-body__title">Клан</p>
+                                                <p class="human-body__text">Трафик-команда<br> «Гибкий маркетинг»</p>
+                                            </div>
+                                        </div>
+                                        <div class="human-body__class-block">
+                                            <img class="human-body__clan-img" src="img/icons/image 88 (Traced).png" alt="">
+                                            <div class="human-body__col">
+                                                <p class="human-body__title">Класс</p>
+                                                <p class="human-body__text">Основатель</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="human-content__footer human-footer text">
+                                       <blockquote class="human-footer__text">Благодарен, как своему психологу, который помогает мне не свихнуться</blockquote>                                       
+                                       <img src="img/peoples/footer.png" alt="">
+                                    </div>
+                                </div>
+                            </li>
+                              <li class="humans-list__li human-card slide">
+                                <div class="human-card__hover">
+                                        <img src="img/Frame_active.svg" alt="">
+                                </div>
+                                <div class="human-card__header human-header">
+                                    <div class="human-header__dna">
+                                        <img class="human-header__dna-img" src="img/DNA.png" alt="">
+                                        <p class="human-header__dna-text fontOver-s">герой N2/JOHNNYADS</p>
+                                    </div>
+                                    <p class="human-header__id fontOver-s">идентификационный <br> номер: N76 87 888</p>
+                                </div>
+                                <div class="human-card__avatar">
+                                    <img src="img/peoples/4.png" alt="">
+                                </div>
+                                <div class="human-card__content human-content">
+                                    <div class="human-content__top">
+                                        <p class="human-content__title title">ЕВГЕНИЙ ИЛЬИН</p>
+                                    </div>
+                                    <div class="human-content__body human-body">
+                                        <div class="human-body__clan-block">
+                                            <img class="human-body__clan-img" src="img/icons/image 86 (Traced).png" alt="">
+                                            <div class="human-body__col">
+                                                <p class="human-body__title">Клан</p>
+                                                <p class="human-body__text">Рекламное агентство <br>PROJECTS</p>
+                                            </div>
+                                        </div>
+                                        <div class="human-body__class-block">
+                                            <img class="human-body__clan-img" src="img/icons/image 88 (Traced).png" alt="">
+                                            <div class="human-body__col">
+                                                <p class="human-body__title">Класс</p>
+                                                <p class="human-body__text">Основатель</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="human-content__footer human-footer text">
+                                       <blockquote class="human-footer__text">Освобождается много времени и рутинные задачи делаются за минуты</blockquote>                                       
+                                       <img src="img/peoples/footer.png" alt="">
+                                    </div>
+                                </div>
+                            </li>  
+                        </ul>
+                        <div class="slider-controls">
+                            <button class="prev">
+                                <svg width="38" height="27" viewBox="0 0 38 27" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M33.3905 4.56096L33.4016 4.54555L33.4134 4.53073L36.437 0.751196H31H24.3518L19.5804 6.47687C18.193 8.18975 16.73 9.87497 15.5954 11.1646C15.3113 11.4875 15.0476 11.7859 14.8107 12.0536L14.7311 12.1437C14.5265 12.375 14.3441 12.5812 14.1873 12.7594C14.0517 12.9136 13.9371 13.0447 13.8453 13.1512C13.8719 13.1983 13.9031 13.2516 13.9393 13.3114C14.1557 13.6687 14.4982 14.1719 14.948 14.7951C15.8426 16.0346 17.1246 17.6977 18.579 19.5212L24.3455 26.2488H31H36.1865L35.4688 25.5312L35.4329 25.4953L35.4022 25.4549C34.875 24.7621 33.9551 23.4584 32.9482 22.0312C32.0981 20.8264 31.1859 19.5335 30.3957 18.4462L27.399 14.4507L27.1205 14.0793L27.3281 13.6641L28.3281 11.6641L28.3619 11.5966L28.4083 11.5371C28.7192 11.1398 29.5188 10.0094 30.5324 8.57635C31.3877 7.36708 32.3955 5.94236 33.3905 4.56096ZM9.32811 13.3359L9.08597 12.8517L9.46882 12.4688L10.4309 11.5068C10.7447 11.0899 11.3013 10.4102 11.9172 9.65808C12.0132 9.54088 12.1106 9.42193 12.2087 9.30194C12.9654 8.37688 13.7798 7.37426 14.3866 6.56592L15.5964 4.7512H12H7.3756L4.60096 8.45072L4.59027 8.46497L4.57891 8.4787C4.14099 9.00829 3.70009 9.53626 3.27798 10.0417C2.76885 10.6514 2.28705 11.2283 1.87079 11.7359C1.49226 12.1975 1.18044 12.5866 0.9641 12.8746C0.91925 12.9344 0.879963 12.9878 0.846012 13.0351C0.855972 13.0514 0.866531 13.0684 0.877708 13.0863C1.02311 13.3189 1.24077 13.6381 1.51591 14.0234C2.06415 14.7912 2.81522 15.7863 3.60995 16.8054C4.40417 17.8238 5.23713 18.8599 5.94788 19.709C6.67334 20.5757 7.23426 21.2023 7.50007 21.4394C7.56809 21.4999 7.9046 21.712 8.67125 21.9059C9.41249 22.0932 10.4989 22.2488 12 22.2488H15.5964L14.3865 20.4341C13.7836 19.6308 12.9694 18.6284 12.2116 17.702C12.115 17.5839 12.0192 17.4668 11.9246 17.3514C11.2832 16.568 10.7048 15.8617 10.3973 15.4484L10.3578 15.3952L10.3281 15.3359L9.32811 13.3359Z" stroke="#11E5B3" stroke-width="1.50239"/>
+                                </svg>   
+                            </button>
+                            <div class="slider-pagination fontOver-b">1/4</div>
+                            <button class="next">
+                                <svg width="38" height="27" viewBox="0 0 38 27" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M4 5C6.15162 7.98718 8.41577 11.2532 9 12L10 14L7 18C5.24489 20.4146 2.97172 23.7231 2 25L0 27H7H14L20 20C22.9218 16.3372 25.1745 13.2887 25 13C24.8255 12.7113 21.7575 9.40457 19 6L14 0H7H0L4 5ZM23 7C24.2383 8.65188 26.3213 11.0883 27 12L28 13L27 15C26.3213 15.9122 24.2304 18.3583 23 20L21 23H26C29.1023 23 30.5987 22.3577 31 22C32.2569 20.8787 38.0295 13.501 38 13C37.9832 12.7153 35.9103 10.3102 34 8L31 4H26H21L23 7Z" stroke="#11E5B3" stroke-width="1.50239"/>
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <article class="teams">
+                <div class="container">
+                    <div class="teams__inner">
+                        <h3 class="teams__title text">Высококлассные команды <br> уже выбрали LOKTAR</h3>
+                        <div class="teams__items">
+                            <li class="teams__items-item ">
+                                <a href=""><img src="img/teams/logo_Skillbox.svg" alt=""></a>
+                            </li>
+                            <li class="teams__items-item">
+                                 <a href=""><img src="img/teams/logo_skytng.svg" alt=""></a>
+                            </li>
+                            <li class="teams__items-item">
+                                 <a href=""><img src="img/teams/logo_elama.svg" alt=""></a>
+                            </li>
+                            <li class="teams__items-item">
+                                 <a href=""><img src="img/teams/logo_litnet.svg" alt=""></a>
+                            </li>
+                            <li class="teams__items-item">
+                                 <a href=""><img src="img/teams/logo_Unisender.svg" alt=""></a>
+                            </li>
+                            <li class="teams__items-item">
+                                 <a href=""><img src="img/teams/logo_webium.svg" alt=""></a>
+                            </li>
+                            <li class="teams__items-item">
+                                 <a href=""><img src="img/teams/logo_umschool.svg" alt=""></a>
+                            </li>
+                            <li class="teams__items-item">
+                                 <a href=""><img src="img/teams/logo_delovayasreda.svg" alt=""></a>
+                            </li>
+                            <li class="teams__items-item">
+                                 <a href=""><img src="img/teams/logo_sravni.svg" alt=""></a>
+                            </li>
+                        </div>
+                    </div>
+                </div>
+            </article>
+            <section class="before">
+                <div class="container">
+                    <div class="before__inner">
+                        <ul class="before__absolute">
+                            <div class="before__absolute-l">
+                                <li class="before__disad fontOver-s">Нехватка времени</li>
+                                <li class="before__disad fontOver-s">не успевает</li>
+                            </div>
+                           <div class="before__absolute-r">
+                                <li class="before__disad fontOver-s">Топчется на месте</li>
+                                <li class="before__disad fontOver-s">тревожность</li>
+                           </div>  
+                        </ul>
+                        <div class="before__col">
+                            <h3 class="before__title cyberText">до</h3>
+                            <p class="before__text text">Таргетолог <br> до подключения к LOKTAR</p>
+                        </div> 
+                    </div>
+                </div>
+            </section>
+            <section id="how" class="how">
+                 <div class="how__inner">
+                    <div class="container">
+                        <div class="how__row">
+                            <h2 class="how__title text">Как к этому прийти <br> и как тут поможет <b>LOKTAR</b>?</h2>
+                            <p class="how__text text">Loktar - это <b>сервис автоматизации таргетинга</b> в ВК.</p>
+                            <p class="how__text text">Делает за тебя всю рутину, которая ниже твоего достоинства :) </p>
+                        </div>
+                    </div> 
+                    <div class="how-table">
+                        <div class="how-table__caption">  
+                            <p class="how-table__title fontOver-s">Функции</p>
+                        </div>
+                        <div class="container">     
+                            <div class="how-table__content">
+                                <img src="img/sliderwindow.png" alt="">
+                                <div class="how-table__tabs">
+                                    <div class="how-table__tab tab active" data-tab="tab1">
+                                        <div class="tab__col">
+                                            <p class="tab__text text">Сквозная  аналитика</p>
+                                            <img src="img/tabs/donut-chart 1 (Traced).png" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="how-table__tab tab" data-tab="tab2">
+                                        <div class="tab__col">
+                                            <p class="tab__text text">Массовое редактирование объявлений</p>
+                                            <img src="img/tabs/edit-image 1 (Traced).png" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="how-table__tab tab" data-tab="tab3">
+                                        <div class="tab__col">
+                                            <p class="tab__text text">Массовое редактирование таргетинга</p>
+                                            <img src="img/tabs/gear 1 (Traced).png" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="how-table__tab tab" data-tab="tab4">
+                                        <div class="tab__col">
+                                            <p class="tab__text text">Массовое создание: 
+                                                мульти- картинки и тексты</p>
+                                            <img src="img/tabs/new-tab 1 (Traced).png" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="how-table__tab tab" data-tab="tab5">
+                                        <div class="tab__col">
+                                            <p class="tab__text text">Переменные 
+                                                в тексте (!)</p>
+                                            <img src="img/tabs/text-box 1 (Traced).png" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="how-table__tab tab" data-tab="tab6">
+                                        <div class="tab__col">
+                                            <p class="tab__text text">Авто-
+                                                сегментация</p>
+                                            <img src="img/tabs/segmentation 1 (Traced).png" alt="">
+                                        </div>
+                                    </div>
+                                    <div  class="how-table__tab tab" data-tab="tab7">
+                                        <div class="tab__col">
+                                            <p class="tab__text text">Автотактики</p>
+                                            <img src="img/tabs/strategy 1 (Traced).png" alt="">
+                                        </div>
+                                    </div>
+                                    <img src="img/tabs/Vector36.svg" alt="">
+                                </div>
+                                <div class="how-table__tabs-contents">
+                                    <div id="tab1" class="how-table__tab-content tab-content active">
+                                        <h3 class="tab-content__title text">Смотрите <b>цену лида и клиента</b> в реальном времени по каждому объявлению</h3>
+                                       <div class="how-slider slider-s">
+                                            <div class="slider-s__container">
+                                                <div class="slides-s">
+                                                    <div class="slide-s">
+                                                        <img src="img/tabs/slide1.png" alt="">
+                                                    </div>
+                                                    <div class="slide-s">
+                                                        <img src="img/tabs/slide1.png" alt="">
+                                                    </div>
+                                                    <div class="slide-s">
+                                                        <img src="img/tabs/slide1.png" alt="">
+                                                    </div>
+                                                    <div class="slide-s">
+                                                        <img src="img/tabs/slide1.png" alt="">
+                                                    </div>
+                                                </div>
+                                            </div> 
+                                            <div class="slider-s__pagination">
+                                                
+                                            </div>
+                                            <div class="slider-s__controls">
+                                                <button class="prev-btn"><img src="/img/tabs/prev.png" alt=""></button>
+                                                <button class="next-btn"><img src="/img/tabs/next.png" alt=""></button>
+                                            </div>    
+                                       </div>
+                                    </div>
+                                    <div id="tab2" class="how-table__tab-content tab-content">
+                                        <h3 class="tab-content__title text">Вы можете редактировать текст, ссылки или картинки (видео) во всех объявлениях сразу</h3>
+                                         <img src="img/tabs/stock1.png" alt="">        
+                                    </div>
+                                    <div id="tab3" class="how-table__tab-content tab-content"> 
+                                        <h3 class="tab-content__title text">Смотрите <b>цену лида и клиента</b> в реальном времени по каждому объявлению</h3>
+                                       <div class="how-slider slider-s">
+                                            <div class="slider-s__container">
+                                                <div class="slides-s">
+                                                    <div class="slide-s">
+                                                        <img src="img/tabs/slide1.png" alt="">
+                                                    </div>
+                                                    <div class="slide-s">
+                                                        <img src="img/tabs/slide1.png" alt="">
+                                                    </div>
+                                                    <div class="slide-s">
+                                                        <img src="img/tabs/slide1.png" alt="">
+                                                    </div>
+                                                    <div class="slide-s">
+                                                        <img src="img/tabs/slide1.png" alt="">
+                                                    </div>
+                                                </div>
+                                            </div> 
+                                            <div class="slider-s__pagination">
+                                                
+                                            </div>
+                                            <div class="slider-s__controls">
+                                                <button class="prev-btn"><img src="/img/tabs/prev.png" alt=""></button>
+                                                <button class="next-btn"><img src="/img/tabs/next.png" alt=""></button>
+                                            </div>    
+                                       </div>
+                                    </div>
+                                    <div id="tab4" class="how-table__tab-content tab-content">
+                                        <h3 class="tab-content__title text">Вы можете редактировать текст, ссылки или картинки (видео) во всех объявлениях сразу</h3>
+                                        <img src="img/tabs/stock1.png" alt="">    </div>
+                                    <div id="tab5" class="how-table__tab-content tab-content">
+                                        <h3 class="tab-content__title text">Вы можете редактировать текст, ссылки или картинки (видео) во всех объявлениях сразу</h3>
+                                        <img src="img/tabs/stock1.png" alt="">   </div>
+                                    <div id="tab6" class="how-table__tab-content tab-content">
+                                        <h3 class="tab-content__title text">Вы можете редактировать текст, ссылки или картинки (видео) во всех объявлениях сразу</h3>
+                                        <img src="img/tabs/stock1.png" alt="">   </div>
+                                    <div id="tab7" class="how-table__tab-content tab-content">
+                                        <h3 class="tab-content__title text">Вы можете редактировать текст, ссылки или картинки (видео) во всех объявлениях сразу</h3>
+                                        <img src="img/tabs/stock1.png" alt="">   </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+               
+            </section>
+            <section class="benefit">
+                <div class="container">      
+                    <h3 class="benefit__title text">Какую <b>выгоду</b> <br> принесет сервис</h3>
+                    <div class="benefit__inner">
+                        <div class="benefit__chart chart">
+                            <div class="chart__top">
+                                <div class="chart__title text">Диаграмма работы таргетолога</div>
+                                <div class="chart__picture fontOver-b">
+                                    <picture>
+                                        <source srcset="img/benefit/Diagram.png" media="(max-width:768px)">
+                                        <source  srcset="img/benefit/diagram-medium.png" media="(max-width:1399px)">
+                                        <img src="img/benefit/Diagram.png" alt="">
+                                    </picture>
+                                </div>
+                            </div>
+                            <div class="arrow">
+                                <img src="img/benefit/Arrow.svg" alt="">
+                            </div>
+                            <div class="chart__bottom">
+                                <p class="chart__text text">
+                                    <span> LOKTAR освобождает это время,</span> которое можно использовать для роста, отдыха или хобби
+                                </p>
+                            </div>
+                        </div>
+                        <div class="benefit__calculator calculator">
+                            <div class="calculator__title text">
+                                <p>Посчитайте, на сколько больше вы начнете зарабатывать вместе с сервисом Loktar</p>
+                            </div>
+                            <div class="calculator__body">
+                                <div class="calculator__top">
+                                    <form class="calculator__form form-calc text">
+                                        <div>
+                                            <label for="money">Сколько ты <b>зарабатываешь в месяц</b> на таргете</label>
+                                            <input class="form-calc__input-text" type="text" name="money" id="money">
+                                        </div>
+                                        <div>
+                                            <label for="hours">Сколько <b>часов в день</b> ты занимаешься таргетингом</label>
+                                            <div  class="range-wrap">
+                                                <input class="form-calc__input-range"  type="range" min="0" max="24" step="1" value="0" name="hours" id="hours">
+                                                <output class="form-calc__output-range" for="hours"></output>
+                                            </div>
+                                        </div>
+                                        <div>
+                                            <label for="days">Сколько <b>дней в месяц</b> работаешь</label>
+                                            <div  class="range-wrap">
+                                                <input class="form-calc__input-range" type="range" min="0" max="31" step="1" value="0" name="days" id="days">
+                                                <output class="form-calc__output-range" for="days"></output>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                                <div class="calculator__bottom">
+                                    <div class="calculator__bottom-title">итого</div>
+                                    <div class="calculator__total total">
+                                        <div class="total__item text">
+                                            <p class="total__label">Час твоего времени приносит тебе:</p>
+                                            <p class="total__value">1000 P</p>
+                                        </div>
+                                        <div class="total__item text">
+                                            <p class="total__label"><b>LOKTAR сэкономит тебе</b></p>
+                                            <p class="total__value">40 ч/мес <span>или</span> 40 000 Р</p>
+                                        </div>
+                                        <div class="total__item text">
+                                            <p class="total__label">С Loktar час твоего времени станет стоить</p>
+                                            <p class="total__value">1300 Р</p>
+                                        </div>
+                                    </div>
+                                    <div class="calculator__bar calc-bar">
+                                        <p class="calc-bar__value">30%</p>
+                                        <p class="calc-bar__alt text">увеличение стоимости работы <br> за час при работе с Loktar</p>
+                                        <div class="calc-bar__picture">
+                                            <div class="calc-bar__picture-dyn">
+                                                <img src="img/benefit/Subtract.png" alt="">
+                                            </div>          
+                                        </div>
+                                    </div>
+                                    <div class="calculator__btn startButton">
+                                        <svg width="351" height="49" viewBox="0 0 351 49" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M2 20L12 2H334H339L349 20L323 47H28L2 20Z" fill="url(#paint0_linear_1_3271)" fill-opacity="0.8"/>
+                                            <path d="M1.35735 19.643L1.09329 20.1183L1.47044 20.5099L27.4704 47.5099L27.6873 47.7352H28H323H323.313L323.53 47.5099L349.53 20.5099L349.907 20.1183L349.643 19.643L339.643 1.64297L339.433 1.26483H339H334H12H11.5674L11.3573 1.64297L1.35735 19.643Z" stroke="#11E5B3" stroke-width="1.47033"/>
+                                            <defs>
+                                            <linearGradient id="paint0_linear_1_3271" x1="115.182" y1="45.0487" x2="116.793" y2="2.96738" gradientUnits="userSpaceOnUse">
+                                            <stop stop-color="#008969"/>
+                                            <stop offset="1" stop-color="#0C1E30" stop-opacity="0"/>
+                                            </linearGradient>
+                                            </defs>
+                                            </svg>                                            
+                                            <button>начать бесплатно</button>                      
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="review">
+                <div class="container">
+                    <h3 class="review__title">
+                        <img src="img/review/Subheader.svg" alt="">
+                        <p class="fontOver-s">отзывы</p>
+                    </h3>
+                    <div class="review__inner">
+                        <div class="review__slider slider-s">
+                            <div class="slider-s__container">
+                                <div class="slides-s">
+                                    <div class="review__item slide-s">
+                                        <div class="review-card__title fontOver-b">Отзыв №1</div>
+                                        <div class="review-card__content">
+                                            <div class="review-card__top">
+                                                <div class="review-card__avatar">
+                                                    <img src="img/review/Photo.png" alt="">
+                                                </div>
+                                                <div class="review-card__info text">
+                                                    <div class="review-card__name">
+                                                        Андрей Анцибор
+                                                    </div>
+                                                    <div class="review-card__prof">
+                                                        Основатель агентства НЕФТЕТРАФИК
+                                                    </div>
+                                                    <div class="review-card__soc">
+                                                        <img src="img/review/vk.svg" alt="">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="review-card__bottom">
+                                                <blockquote class="review-card__quote text">
+                                                    <p>   Локтар... Благодарен, как своему психологу, который помогает мне не свихнуться, постоянно катаясь на этом аттракционе таргетированной рекламы. </p>
+                                                    <p>Все быстро, удобно, даже с телефона могу зайти в любое время и место. И проснувшись среди ночи, не иду к компу, а открываю "любимые" таблички прямо с мобилы). </p>
+                                                    <p>Благодарю за экономию времени и нервов</p>
+                                                </blockquote>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="review__item slide-s">
+                                        <div class="review-card__title fontOver-b">Отзыв №1</div>
+                                        <div class="review-card__content">
+                                            <div class="review-card__top">
+                                                <div class="review-card__avatar">
+                                                    <img src="img/review/Photo.png" alt="">
+                                                </div>
+                                                <div class="review-card__info text">
+                                                    <div class="review-card__name">
+                                                        Андрей Анцибор
+                                                    </div>
+                                                    <div class="review-card__prof">
+                                                        Основатель агентства НЕФТЕТРАФИК
+                                                    </div>
+                                                    <div class="review-card__soc">
+                                                        <img src="img/review/vk.svg" alt="">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="review-card__bottom">
+                                                <blockquote class="review-card__quote text">
+                                                    <p>   Локтар... Благодарен, как своему психологу, который помогает мне не свихнуться, постоянно катаясь на этом аттракционе таргетированной рекламы. </p>
+                                                    <p>Все быстро, удобно, даже с телефона могу зайти в любое время и место. И проснувшись среди ночи, не иду к компу, а открываю "любимые" таблички прямо с мобилы). </p>
+                                                    <p>Благодарю за экономию времени и нервов</p>
+                                                </blockquote>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="review__item slide-s">
+                                        <div class="review-card__title fontOver-b">Отзыв №1</div>
+                                        <div class="review-card__content">
+                                            <div class="review-card__top">
+                                                <div class="review-card__avatar">
+                                                    <img src="img/review/Photo.png" alt="">
+                                                </div>
+                                                <div class="review-card__info text">
+                                                    <div class="review-card__name">
+                                                        Андрей Анцибор
+                                                    </div>
+                                                    <div class="review-card__prof">
+                                                        Основатель агентства НЕФТЕТРАФИК
+                                                    </div>
+                                                    <div class="review-card__soc">
+                                                        <img src="img/review/vk.svg" alt="">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="review-card__bottom">
+                                                <blockquote class="review-card__quote text">
+                                                    <p>   Локтар... Благодарен, как своему психологу, который помогает мне не свихнуться, постоянно катаясь на этом аттракционе таргетированной рекламы. </p>
+                                                    <p>Все быстро, удобно, даже с телефона могу зайти в любое время и место. И проснувшись среди ночи, не иду к компу, а открываю "любимые" таблички прямо с мобилы). </p>
+                                                    <p>Благодарю за экономию времени и нервов</p>
+                                                </blockquote>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="slider-s__pagination">               
+                            </div>
+                            <div class="review__slidesr-cntrl slider-s__controls">
+                                <button class="prev-btn"><img src="/img/tabs/prev.png" alt=""></button>
+                                <button class="next-btn"><img src="/img/tabs/next.png" alt=""></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="privilege">
+                <div class="container">
+                    <h3 class="privilege__title text">Преимущества LOKTAR перед другими сервисами</h3>
+                    <div class="privilege__inner">
+                        <div class="privilege__col">
+                            <div class="points">
+                                <div class="points__top">
+                                    <ul class="points__list text">
+                                        <li class="points__list-li">Интерфейс</li>
+                                        <li class="points__list-li">Быстродействие</li>
+                                        <li class="points__list-li">Интеграции</li>
+                                        <li class="points__list-li">Автосегментация</li>
+                                        <li class="points__list-li">Форматы рекламы</li>
+                                    </ul>
+                                </div>
+                                <div class="points__bottom">
+                                    <ul class="points__list text">
+                                        <li class="points__list-li">Мультикартинки</li>
+                                        <li class="points__list-li">Мультитексты</li>
+                                        <li class="points__list-li">Переменные в тексте</li>
+                                        <li class="points__list-li">Гостевой или командный доступ</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="services slider-s">
+                                <div class="slider-s__container">
+                                    <div class="slides-s">
+                                        <div class="service-loktar slide-s">
+                                            <h4 class="service-loktar__title fontOver-b">
+                                                Сервис <br> LOKTAR
+                                            </h4>
+                                            <div class="service-loktar__content">
+                                                <div class="service-loktar__top">
+                                                    <ul class="service-loktar__list text">
+                                                        <li class="service-loktar__list-li">
+                                                            Простой и удобный
+                                                        </li>
+                                                        <li class="service-loktar__list-li">
+                                                            Быстрая работа
+                                                        </li>
+                                                        <li class="service-loktar__list-li">
+                                                            Большой набор
+                                                        </li>
+                                                        <li class="service-loktar__list-li">
+                                                            По всем критерям таргетинга,<br> по нескольким одновременно
+                                                        </li>
+                                                        <li class="service-loktar__list-li">
+                                                            Самый большой набор среди аналогов
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                                <div class="service-loktar__bottom">
+                                                    <span class="plus"></span>
+                                                    <span class="plus"></span>
+                                                    <span class="plus"></span>
+                                                    <span class="plus"></span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="service-other  slide-s">
+                                            <h4 class="service-other__title fontOver-b">
+                                                Другие <br> сервисы
+                                            </h4>
+                                            <div class="service-other__content">
+                                                <div class="service-other__top">
+                                                    <ul class="service-other__list text">
+                                                        <li class="service-other__list-li">
+                                                            Сложный и запутанный
+                                                        </li>
+                                                        <li class="service-other__list-li">
+                                                            Долгие загрузки, зависания
+                                                        </li>
+                                                        <li class="service-other__list-li">
+                                                            Меньше, чем в LOKTAR
+                                                        </li>
+                                                        <li class="service-other__list-li">
+                                                            Нет или ограничена
+                                                        </li>
+                                                        <li class="service-other__list-li">
+                                                            Ограниченный набор
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                                <div class="service-other__bottom">
+                                                    <span class="minus"></span>
+                                                    <span class="minus"></span>
+                                                    <span class="minus"></span>
+                                                    <span class="minus"></span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div> 
+                                <div class="slider-s__pagination">            
+                                </div>
+                                <div class="slider-s__controls">
+                                    <button class="prev-btn"><img src="/img/tabs/prev.png" alt=""></button>
+                                    <button class="next-btn"><img src="/img/tabs/next.png" alt=""></button>
+                                </div>      
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section id="tarifs" class="tarifs">
+                <div class="container">
+                    <div class="tarifs__title">
+                        <img src="img/review/Subheader.svg" alt="">
+                        <h3 class="fontOver-s">тарифы</h3>
+                    </div>
+                    <div class="tarifs__inner">
+                        <div class="tarifs__col">
+                            <div class="tarifs__free free-tarif text">
+                                <p class="free-tarif__alt">Базовый</p>
+                                <div class="free-tarif__content">
+                                    <div class="free-tarif__caption">FREE</div>
+                                    <ul class="free-tarif__list">
+                                        <li class="free-tarif__list-li">Пункт тарифа один</li>
+                                        <li class="free-tarif__list-li">Пункт тарифа два</li>
+                                        <li class="free-tarif__list-li">Пункт тарифа три</li>
+                                        <li class="free-tarif__list-li">Пункт тарифа четыре</li>
+                                        <li class="free-tarif__list-li">Пункт тарифа пять</li>
+                                    </ul>
+                                    <div class="details">
+                                        <div class="details__text">
+                                            <p class="details__sum">Бесплатно <sup class="details__sum-month">/ 7 дней</sup></p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tarifs__pro pro-tarif text">
+                                <p class="pro-tarif__alt">Самый популярный</p>
+                                <div class="pro-tarif__content">
+                                    <div class="pro-tarif__caption">ПРОФИ</div>
+                                    <ul class="pro-tarif__list">
+                                        <li class="pro-tarif__list-li">Интеграция с Senler, Яндекс.Метрикой, Геткурс, Salebot</li>
+                                        <li class="pro-tarif__list-li">Автоматическая установка utm-меток</li>
+                                        <li class="pro-tarif__list-li">Массовое создание/копирование объявлений</li>
+                                        <li class="pro-tarif__list-li">Авто-сегментирование</li>
+                                        <li class="pro-tarif__list-li">Массовое редактирование постов</li>
+                                        <li class="pro-tarif__list-li">Массовое редактирование таргетинга</li>
+                                        <li class="pro-tarif__list-li">«Сегментирование» по картинкам</li>
+                                        <li class="pro-tarif__list-li">Переменные в тексте постов</li>
+                                        <li class="pro-tarif__list-li">Автоправила</li>
+                                        <li class="pro-tarif__list-li">Функция «Найти и заменить»</li>
+                                        <li class="pro-tarif__list-li">Гостевой доступ для 5 пользователей</li>
+                                    </ul>
+                                    <div class="payment-details">
+                                        <div class="details">
+                                            <div class="details__text">
+                                                <p class="details__sum">2990 ₽ <sup class="details__sum-month">/ месяц</sup></p>
+                                            </div>
+                                        </div>
+                                        <div class="payment">
+                                            <div class="payment__buttons">
+                                                <button class="payment__btn-month active">Ежемесячная оплата</button>
+                                                <button class="payment__btn-year">Оплата за год</button>
+                                                <div class="button-switch"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>   
+                            </div>
+                        </div>
+                        <div class="tarifs__start">
+                            <p class="tarifs__start-text text">Нажмите кнопку, чтобы получить 7 дней <br> полного тарифа бесплатно</p>
+                            <div class="tarifs__start-btn startButton">
+                                <svg width="351" height="49" viewBox="0 0 351 49" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M2 20L12 2H334H339L349 20L323 47H28L2 20Z" fill="url(#paint0_linear_1_3271)" fill-opacity="0.8"/>
+                                    <path d="M1.35735 19.643L1.09329 20.1183L1.47044 20.5099L27.4704 47.5099L27.6873 47.7352H28H323H323.313L323.53 47.5099L349.53 20.5099L349.907 20.1183L349.643 19.643L339.643 1.64297L339.433 1.26483H339H334H12H11.5674L11.3573 1.64297L1.35735 19.643Z" stroke="#11E5B3" stroke-width="1.47033"/>
+                                    <defs>
+                                    <linearGradient id="paint0_linear_1_3271" x1="115.182" y1="45.0487" x2="116.793" y2="2.96738" gradientUnits="userSpaceOnUse">
+                                    <stop stop-color="#008969"/>
+                                    <stop offset="1" stop-color="#0C1E30" stop-opacity="0"/>
+                                    </linearGradient>
+                                    </defs>
+                                    </svg>                                            
+                                    <button>начать бесплатно</button> 
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section id="faq" class="faq">
+                <div class="container">
+                    <div class="faq__title">
+                        <img src="img/review/Subheader.svg" alt="">
+                        <h3 class="fontOver-s">FAQ</h3>
+                    </div>
+                    <div class="faq__inner">
+                        <div class="faq__content text">
+                            <div class="faq__questions quest-1">      
+                                <div class="quest__block">
+                                    <p class="faq__quest-num fontOver-b">Вопрос N1</p>
+                                    <div class="quest__row">
+                                        <p class="quest__text">Сервис работает с агентскими кабинетами?</p>
+                                        <div class="quest__arrow">
+                                            <svg width="23" height="24" viewBox="0 0 23 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M4.40479 4.70649L4.39783 4.6969L4.39043 4.68765L1.04031 0.5L6 0.5L12.7324 0.5L16.584 6.27735L16.5973 6.29734L16.6125 6.31596C17.8493 7.83285 19.0627 9.2716 19.9851 10.3616C20.0857 10.4805 20.1828 10.5952 20.276 10.7053C20.6107 11.1007 20.8959 11.4374 21.1166 11.7009C21.2578 11.8694 21.3708 12.0058 21.4528 12.1071C21.4594 12.1152 21.4657 12.123 21.4716 12.1304C21.4469 12.1897 21.4115 12.266 21.3632 12.3606C21.2113 12.6582 20.9623 13.0782 20.6203 13.602C19.9389 14.6457 18.9109 16.0668 17.613 17.6834L12.7658 23.5H6H1.20711L2.35355 22.3536L2.37687 22.3302L2.39692 22.3041C2.81022 21.7645 3.36703 20.8906 3.98539 19.92C4.04266 19.8301 4.10045 19.7394 4.1587 19.6481C4.85379 18.5581 5.62783 17.3555 6.40182 16.2976L9.4 12.3L9.66019 11.9531L9.35355 11.6464L8.37551 10.6684C8.18276 10.4177 7.84299 9.88382 7.37433 9.14742C7.24207 8.93961 7.09955 8.71566 6.94717 8.4774C6.25172 7.38999 5.37616 6.04615 4.40479 4.70649Z" stroke="#11E5B3"/>
+                                            </svg> 
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="quest__answer answer-1">
+                                    <div class="answer__block">
+                                        <img src="img/faq/LogoAns1.png" alt="">
+                                        <p class="answer__text">— Да. Сервис работает с любыми кабинетами, к которым у вас есть доступ</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="faq__questions quest-2">
+                                <div class="quest__block">
+                                    <p class="faq__quest-num fontOver-b">Вопрос N2</p>
+                                    <div class="quest__row">
+                                        <p class="quest__text">Сервис работает с агентскими кабинетами?</p>
+                                        <div class="quest__arrow">
+                                            <svg width="23" height="24" viewBox="0 0 23 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M4.40479 4.70649L4.39783 4.6969L4.39043 4.68765L1.04031 0.5L6 0.5L12.7324 0.5L16.584 6.27735L16.5973 6.29734L16.6125 6.31596C17.8493 7.83285 19.0627 9.2716 19.9851 10.3616C20.0857 10.4805 20.1828 10.5952 20.276 10.7053C20.6107 11.1007 20.8959 11.4374 21.1166 11.7009C21.2578 11.8694 21.3708 12.0058 21.4528 12.1071C21.4594 12.1152 21.4657 12.123 21.4716 12.1304C21.4469 12.1897 21.4115 12.266 21.3632 12.3606C21.2113 12.6582 20.9623 13.0782 20.6203 13.602C19.9389 14.6457 18.9109 16.0668 17.613 17.6834L12.7658 23.5H6H1.20711L2.35355 22.3536L2.37687 22.3302L2.39692 22.3041C2.81022 21.7645 3.36703 20.8906 3.98539 19.92C4.04266 19.8301 4.10045 19.7394 4.1587 19.6481C4.85379 18.5581 5.62783 17.3555 6.40182 16.2976L9.4 12.3L9.66019 11.9531L9.35355 11.6464L8.37551 10.6684C8.18276 10.4177 7.84299 9.88382 7.37433 9.14742C7.24207 8.93961 7.09955 8.71566 6.94717 8.4774C6.25172 7.38999 5.37616 6.04615 4.40479 4.70649Z" stroke="#11E5B3"/>
+                                            </svg> 
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="quest__answer answer-2">
+                                    <div class="answer__block">
+                                        <img src="img/faq/LogoAns1.png" alt="">
+                                        <p class="answer__text">— Да. Сервис работает с любыми кабинетами, к которым у вас есть доступ</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="faq__questions quest-3">
+                                <div class="quest__block">
+                                    <p class="faq__quest-num fontOver-b">Вопрос N3</p>
+                                    <div class="quest__row">
+                                        <p class="quest__text">Сервис работает с агентскими кабинетами?</p>
+                                        <div class="quest__arrow">
+                                            <svg width="23" height="24" viewBox="0 0 23 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M4.40479 4.70649L4.39783 4.6969L4.39043 4.68765L1.04031 0.5L6 0.5L12.7324 0.5L16.584 6.27735L16.5973 6.29734L16.6125 6.31596C17.8493 7.83285 19.0627 9.2716 19.9851 10.3616C20.0857 10.4805 20.1828 10.5952 20.276 10.7053C20.6107 11.1007 20.8959 11.4374 21.1166 11.7009C21.2578 11.8694 21.3708 12.0058 21.4528 12.1071C21.4594 12.1152 21.4657 12.123 21.4716 12.1304C21.4469 12.1897 21.4115 12.266 21.3632 12.3606C21.2113 12.6582 20.9623 13.0782 20.6203 13.602C19.9389 14.6457 18.9109 16.0668 17.613 17.6834L12.7658 23.5H6H1.20711L2.35355 22.3536L2.37687 22.3302L2.39692 22.3041C2.81022 21.7645 3.36703 20.8906 3.98539 19.92C4.04266 19.8301 4.10045 19.7394 4.1587 19.6481C4.85379 18.5581 5.62783 17.3555 6.40182 16.2976L9.4 12.3L9.66019 11.9531L9.35355 11.6464L8.37551 10.6684C8.18276 10.4177 7.84299 9.88382 7.37433 9.14742C7.24207 8.93961 7.09955 8.71566 6.94717 8.4774C6.25172 7.38999 5.37616 6.04615 4.40479 4.70649Z" stroke="#11E5B3"/>
+                                            </svg> 
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="quest__answer answer-3">
+                                    <div class="answer__block">
+                                        <img src="img/faq/LogoAns1.png" alt="">
+                                        <p class="answer__text">— Да. Сервис работает с любыми кабинетами, к которым у вас есть доступ</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="anyQuest">
+                            <div class="anyQuest__content">
+                                <p class="anyQuest__subheader fontOver-b">Остались вопросы?</p>
+                                <p class="anyQuest__text text">Пишите нам в чат -></p>
+                            </div>
+                            <p class="anyQuest__foot fontOver-b">цифровой помощник L</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <footer class="footer">
+            <div class="container">
+                <div class="footer__inner">
+                    <div class="footer__row ">
+                        <div class="footer__top">
+                            <div class="footer__date fontOver-s">2019-2022 </div>
+                            <div class="footer__logo fontOver-s">LOKTAR</div>
+                        </div>
+                        <div class="footer__bottom">
+                            <div class="footer__contract">
+                                <p class="footer__contract-offer fontOver-s">договор оферта</p>
+                                <p class="footer__offer fontOver-s">оферта</p>
+                            </div>
+                            <div class="footer__privacy fontOver-s">политика конфиденциальности</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="after">
+                <div class="after__inner">
+                    <picture>
+                         <source srcset="img/afterSml.svg" media="(max-width:768px)">
+                        <source srcset="img/afterMed.svg" media="(max-width:999px)">
+                        <img src="img/afterBig.svg" alt="">
+                    </picture>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <script src="js/lck.js" defer></script>
+    <script src="js/tetris.js"></script>
+</body>
+</html>
