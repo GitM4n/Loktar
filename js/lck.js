@@ -1,7 +1,7 @@
 window.addEventListener('load', function () {
   const page = this.document.querySelector('.page-load');
 
-  this.document.documentElement.style.overflow = 'auto';
+  this.document.documentElement.style.overflow = 'visible';
   page.classList.add('hide');
  
 
