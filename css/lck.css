@@ -16,6 +16,62 @@ body._lock .header__inner{
     opacity: 0;
 }
 
+
+.page-load.hide{
+    z-index: -99;
+    visibility: hidden;
+    opacity: 0;
+   
+}
+
+
+.page-load{
+    position: absolute;
+    width: 100%;
+    min-height: 100vh;
+    z-index: 100;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.5s ease 0s;
+    background: #001324;
+   
+}
+
+.page-load__bg{
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    background: url('../img/pageLoad.webp') no-repeat center;
+    background-size: cover;
+    filter: brightness(30%);
+    top: 0;
+    left: 0;
+}
+
+.page-load p{
+    position: relative;
+    z-index: 101;
+    font-size: 10em;
+    border: none;
+    animation: hue 10s infinite linear;
+    background: linear-gradient(to right top, #11E5B3 0%, #9A3AE0 97.84%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
+    filter: none;
+
+}
+@keyframes hue {
+    from {
+		filter: hue-rotate(-360deg);
+	}
+	to {
+		filter: hue-rotate(0deg);
+	}
+}
+
 .wrapper{
     min-height: 100%;
     position: relative;
