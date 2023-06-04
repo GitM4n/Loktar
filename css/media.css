@@ -276,6 +276,16 @@
         top: -50px;
     }
     
+    .how{
+        padding: 70px 0 170px 0;
+    }
+    .how__title{
+        font-size: 54px !important;
+    }
+
+
+
+
     .calc-bar__picture-dyn img{
         max-width: 600px;
     }
@@ -713,6 +723,16 @@
         background-size: 150% 70%;
     }
 
+    .mob-menu__inner{
+        justify-content: start;
+    }
+    .mob-menu__col{
+        padding: 25px 5px;
+    }
+
+    .header{
+        padding-bottom: 10%;
+    }
     
 
 
@@ -728,7 +748,7 @@
     }
     .human-card{
         max-width: 290px;
-        max-height: 580px;
+        max-height: 545px;
     }
     .human-card__avatar{
         margin-top: -35%;
@@ -744,6 +764,13 @@
     .human-header__dna-text{
         font-size: 9px !important;
         
+    }
+
+    .how__title{
+        font-size: 37px !important;
+    }
+    .how__text{
+        font-size: 18px !important;
     }
 
     .calculator__btn svg{
