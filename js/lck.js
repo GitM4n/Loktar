@@ -1,3 +1,11 @@
+window.addEventListener('load', function () {
+  const page = this.document.querySelector('.page-load');
+
+  this.document.documentElement.style.overflow = 'auto';
+  page.classList.add('hide');
+ 
+
+})
 
 
 const slider = document.querySelector('.slider__container');
